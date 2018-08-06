@@ -25,8 +25,9 @@ def draw(path):
         plt.scatter(x,y, label=key, c = color[key])
 
     plt.legend()
+    plt.savefig("softmax_loss_feat.png")
 
-draw('largemargin_loss_feat.log')
-#draw('softmax_loss_feat.log')
+#draw('largemargin_loss_feat.log')
+draw('softmax_loss_feat.log')
 
 plt.show()
